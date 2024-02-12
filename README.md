@@ -1,5 +1,21 @@
 # Predictive ML Models for Employee Retention
 
+## Dataset
+Dataset downloaded from [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction).
+
+### Data Understanding
+14,999 rows, 10 columns - each row is a different employee's self-reported information
+- satisfaction_level = Self-reported satisfaction level [0-1]
+- last evaluation = Score of employee's last performance review [0-1]
+- number_project = Number of projects employee contributes to
+- average_monthly_hours =  Average number of hours employee worked per month
+- time_spend_company = How long the employee has been with the company (in years)
+- work_accident =  Whether or not the employee experienced an accident while at work
+- left =  Whether or not the employee left the company
+- promotion_last_5years =  Whether or not the employee was promoted in the last 5 years
+- department =  Employee's department
+- salary =  Employee's salary (low, medium, or high)
+
 ## Project Overview
 This project aims to predict employee turnover using various machine learning models. By analyzing HR data, the project identifies key factors leading to employee departures and provides actionable insights to reduce turnover rates.
 
