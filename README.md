@@ -257,42 +257,6 @@ Decision Trees are a simple yet powerful tool for classification tasks. This sec
 ### Python Code Snapshot for Decision Tree Model
 
 ```python
-from sklearn.ensemble import RandomForestClassifier
-
-# Train the Random Forest Model
-random_forest = RandomForestClassifier(class_weight='balanced', random_state=42, n_estimators=100)
-random_forest.fit(X_train, y_train)
-
-# Predict on the testing set
-y_pred_rf = random_forest.predict(X_test)
-
-# Evaluate the Random Forest Model
-accuracy_rf = accuracy_score(y_test, y_pred_rf)
-precision_rf = precision_score(y_test, y_pred_rf)
-recall_rf = recall_score(y_test, y_pred_rf)
-roc_auc_rf = roc_auc_score(y_test, y_pred_rf)
-
-# Random Forest model performance metrics
-rf_performance = {
-    'Accuracy': accuracy_rf,
-    'Precision': precision_rf,
-    'Recall': recall_rf,
-    'ROC-AUC Score': roc_auc_rf
-}
-
-rf_performance
-```
-
-
-### Results Summary for Decision Tree Model
-- Includes accuracy, precision, recall, and ROC-AUC scores obtained from the Decision Tree model.
-
-## Other Models and Comparisons
-The project also explores additional models, including Random Forest and XGBoost, comparing their performance in predicting employee turnover.
-
-### Python Code Snapshot for Random Forest Model
-
-```python
 from sklearn.tree import DecisionTreeClassifier
 
 # Train the Decision Tree Model
@@ -317,6 +281,42 @@ dt_performance = {
 }
 
 dt_performance
+```
+
+
+### Results Summary for Decision Tree Model
+- Includes accuracy, precision, recall, and ROC-AUC scores obtained from the Decision Tree model.
+
+## Other Models and Comparisons
+The project also explores additional models, including Random Forest and XGBoost, comparing their performance in predicting employee turnover.
+
+### Python Code Snapshot for Random Forest Model
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+
+# Train the Random Forest Model
+random_forest = RandomForestClassifier(class_weight='balanced', random_state=42, n_estimators=100)
+random_forest.fit(X_train, y_train)
+
+# Predict on the testing set
+y_pred_rf = random_forest.predict(X_test)
+
+# Evaluate the Random Forest Model
+accuracy_rf = accuracy_score(y_test, y_pred_rf)
+precision_rf = precision_score(y_test, y_pred_rf)
+recall_rf = recall_score(y_test, y_pred_rf)
+roc_auc_rf = roc_auc_score(y_test, y_pred_rf)
+
+# Random Forest model performance metrics
+rf_performance = {
+    'Accuracy': accuracy_rf,
+    'Precision': precision_rf,
+    'Recall': recall_rf,
+    'ROC-AUC Score': roc_auc_rf
+}
+
+rf_performance
 ```
 
 ### Python Code Snapshot for XGBoost Model
