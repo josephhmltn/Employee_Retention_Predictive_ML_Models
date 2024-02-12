@@ -17,7 +17,7 @@ Dataset downloaded from [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/
 - salary =  Employee's salary (low, medium, or high)
 
 ## Project Overview
-This project aims to predict employee turnover using various machine learning models. By analyzing HR data, the project identifies key factors leading to employee departures and provides actionable insights to reduce turnover rates.
+This project started as the capstone project for the [Google Advanced Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics#courses) via Coursera and aims to predict employee turnover using various machine learning models. By analyzing HR data, the project identifies key factors leading to employee departures and provides actionable insights to reduce turnover rates.
 
 ## Data Loading and Preprocessing
 Data preprocessing involved cleaning, encoding categorical variables, and feature scaling to prepare the dataset for model training.
